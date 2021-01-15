@@ -14,6 +14,11 @@
     <p>Fill out the quiz below to find out which programming language would be best for you!</p>
     
     <form id="quiz" class="needs-validation" novalidate>
+
+      <div class="form-group">
+        <label for="name">Enter your Name</label>
+        <input id="name" class="form-control" type="text">
+      </div>
    
       <h3>Which color do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="color" required>
@@ -59,7 +64,7 @@
     </form>
  
     <div id="answer" class="card">
-      <div class="card-header">The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</div>
+      <div class="card-header"><span class="name"></span>, the best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</div>
       <div class="card-body">
         <p class="card-text"><span id="c-info">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</span><span id="ruby-info">Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</span><span id="python-info">Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</span></p>
       </div>

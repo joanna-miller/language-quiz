@@ -17,17 +17,21 @@ $(document).ready(function () {
     const foodAnswer = parseInt($("#food").val());
     const regionAnswer = parseInt($("#region").val());
     const musicAnswer = parseInt($("#music").val());
+    const nameInput = $("input#name").val();
     
     if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= -5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= -2) {
-      $("#answer").show();
+      $(".name").text(nameInput);
+      $("#answer").fadeIn();
       $("#c, #python").hide();
       $("#c-info, #python-info").hide();
     } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer >= -1 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 1) {
-      $("#answer").show();
+      $(".name").text(nameInput);
+      $("#answer").fadeIn();
       $("#ruby, #c").hide(); 
       $("#ruby-info, #c-info").hide(); 
     } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 2) {
-      $("#answer").show();
+      $(".name").text(nameInput);
+      $("#answer").fadeIn();
       $("#ruby, #python").hide();
       $("#ruby-info, #python-info").hide();
     }
