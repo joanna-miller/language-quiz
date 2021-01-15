@@ -13,20 +13,29 @@
 
     <p>Fill out the quiz below to find out which programming language would be best for you!</p>
     
-    <h3>Which color do you like most?</h3>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-        Red
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-      <label class="form-check-label" for="flexRadioDefault2">
-        Blue
-      </label>
-    </div>
+    <form id="quiz">
+      <h3>What color do you like most?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="1" checked>
+          Red
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="2" checked>
+          Blue
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="3" checked>
+          Yellow
+        </label>
+      </div>
+    </form>
    
+   <button type="submit" class="btn">Submit!</button>
 
     <div id="answer">
       <p>The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</p>
@@ -35,6 +44,8 @@
   </div>
 </body>
 </html> 
+
+<!--  -->
 
 <!-- <form id="quiz">
       <h3>Which color do you like most?</h3>
@@ -77,5 +88,5 @@
         <option value="3">Country</option>
       </select>
 
-      <button type="submit" class="btn">Submit!</button>
+      
     </form> -->

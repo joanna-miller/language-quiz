@@ -1,7 +1,8 @@
-$(document).ready(function ()
+$(document).ready(function () {
   $("#quiz").submit(function(event){
-    const ruby = parseInt($("#color :selected").val();
-    console.log(ruby);
+    const flavor = parseInt($("input:radio[name=color]:checked").val());
+    event.preventDefault();
+    console.log(flavor);
   });
 
 });
