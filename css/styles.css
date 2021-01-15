@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
   color: #252e2f;
+  margin-top: 40px;
 }
 
 h3 {
@@ -10,7 +11,6 @@ h3 {
 p {
   text-align: center;
   color: #24484b;
-  margin-top: 12px;
 }
 
 body {
@@ -35,13 +35,17 @@ body {
 }
 
 .card {
-  margin: 0, auto;
+  background-color: #dffcff;
+  border-color: white;
+}
+
+.card-header {
+  text-align: center;
+  color: #223358;
 }
 
 #answer {
   margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
   display: none;
 }
 
