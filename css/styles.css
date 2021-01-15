@@ -1,20 +1,22 @@
-h1, p {
+h1 {
   text-align: center;
-  color: #223358
+  color: #252e2f;
 }
 
 h3 {
-  color: #223358;
+  color: #252e2f;
+}
+
+p {
+  text-align: center;
+  color: #24484b;
+  margin-top: 12px;
 }
 
 body {
   background: rgb(172,213,217);
-  background: radial-gradient(circle, rgba(172,213,217,1) 0%, rgba(137,162,217,1) 100%);
+  background: radial-gradient(circle, rgba(172,213,217,1) 0%, rgba(73,125,130,100) 100%);
 } 
-
-#answer {
-  display:none;
-}
 
 .btn {
   background-color: #dffcff;
@@ -23,6 +25,38 @@ body {
   margin-top: 20px;
 }
 
+.btn:hover {
+  border: solid gold;
+  color: goldenrod;
+}
+
 .refresh {
   float: right;
 }
+
+.alert {
+  background-color: #dffcff;
+}
+
+#answer {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+}
+
+#ruby {
+  color: red;
+  font-weight: bold;
+}
+
+#python {
+  color: blue;
+  font-weight: bold;
+}
+
+#c {
+  color: purple;
+  font-weight: bold;
+}
+
