@@ -21,12 +21,15 @@ $(document).ready(function () {
     if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 7) {
       $("#answer").show();
       $("#c, #python").hide();
+      $("#c-info, #python-info").hide();
     } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer > 7 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer < 13) {
       $("#answer").show();
       $("#ruby, #c").hide(); 
+      $("#ruby-info, #c-info").hide(); 
     } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 13) {
       $("#answer").show();
       $("#ruby, #python").hide();
+      $("#ruby-info, #python-info").hide();
     }
     event.preventDefault();
   });  

@@ -34,8 +34,8 @@ body {
   float: right;
 }
 
-.alert {
-  background-color: #dffcff;
+.card {
+  margin: 0, auto;
 }
 
 #answer {

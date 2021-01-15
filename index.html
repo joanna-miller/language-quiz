@@ -17,7 +17,7 @@
    
       <h3>Which color do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="color" required>
-            <option selected disabled value="">Open this select menu</option>
+            <option selected disabled value="">Choose...</option>
             <option value="1">Red</option>
             <option value="2">Blue</option>
             <option value="3">Purple</option>
@@ -25,7 +25,7 @@
 
           <h3>Which season do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="season" required>
-            <option selected disabled value="">Open this select menu</option>
+            <option selected disabled value="">Choose...</option>
             <option value="1">Spring</option>
             <option value="2">Summer</option>
             <option value="3">Fall</option>
@@ -33,7 +33,7 @@
 
           <h3>Which food do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="food" required>
-            <option selected disabled value="">Open this select menu</option>
+            <option selected disabled value="">Choose...</option>
             <option value="1">Tacos</option>
             <option value="2">Pizza</option>
             <option value="3">Sandwiches</option>
@@ -41,7 +41,7 @@
 
           <h3>Which landscape do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="region" required>
-            <option selected disabled value="">Open this select menu</option>
+            <option selected disabled value="">Choose...</option>
             <option value="1">Coastal</option>
             <option value="2">Mountain</option>
             <option value="3">Desert</option>
@@ -49,18 +49,23 @@
 
           <h3>Which music genre do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="music" required>
-            <option selected disabled value="">Open this select menu</option>
+            <option selected disabled value="">Choose...</option>
             <option value="1">Hip Hop</option>
             <option value="2">Rock</option>
             <option value="3">Country</option>
           </select>
       <button type="submit" class="btn submit">Submit!</button><input class="refresh btn" type="button" value="Clear Form" onClick="location.href=location.href">
     </form>
-
-    <div class="alert alert-light" id="answer" role="alert">
-      <p>The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</p>
-    </div>
  
+    <div id="answer" class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</div>
+      <div class="card-body">
+        <p class="card-text"><span id="c-info">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</span><span id="ruby-info">Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</span><span id="python-info">Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</span></p>
+      </div>
+    </div>
+    
+    
+    </div>
     
   </div>
 </body>
