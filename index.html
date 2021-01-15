@@ -13,11 +13,11 @@
 
     <p>Fill out the quiz below to find out which programming language would be best for you!</p>
     
-    <form id="quiz">
+    <form id="quiz" class="needs-validation" novalidate>
    
       <h3>Which color do you like most?</h3>
-          <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="color">
-            <option selected>Open this select menu</option>
+          <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="color" required>
+            <options selected disabled value="hey">Open this select menu</option>
             <option value="1">Blue</option>
             <option value="2">Red</option>
             <option value="3">Green</option>
@@ -25,7 +25,7 @@
 
           <h3>Which season do you like most?</h3>
           <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="season">
-            <option selected>Open this select menu</option>
+            <option selected disabled value>Open this select menu</option>
             <option value="1">Spring</option>
             <option value="2">Summer</option>
             <option value="3">Fall</option>
@@ -58,17 +58,10 @@
     </form>
 
     <div id="answer">
-      <p>The best programming language for you to study is <span id="try-ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</p>
+      <p>The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</p>
     </div>
 
   </div>
 </body>
 </html> 
 
-<!--  -->
-
-<!-- <form id="quiz">
-      
-
-      
-    </form> -->
