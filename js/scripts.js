@@ -18,15 +18,15 @@ $(document).ready(function () {
     const regionAnswer = parseInt($("#region").val());
     const musicAnswer = parseInt($("#music").val());
     
-    if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 7) {
+    if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= -5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= -2) {
       $("#answer").show();
       $("#c, #python").hide();
       $("#c-info, #python-info").hide();
-    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer > 7 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer < 13) {
+    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer >= -1 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 1) {
       $("#answer").show();
       $("#ruby, #c").hide(); 
       $("#ruby-info, #c-info").hide(); 
-    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 13) {
+    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 2) {
       $("#answer").show();
       $("#ruby, #python").hide();
       $("#ruby-info, #python-info").hide();
