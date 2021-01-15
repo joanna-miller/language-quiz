@@ -3,6 +3,10 @@ h1, p {
   color: #223358
 }
 
+h3 {
+  color: #223358;
+}
+
 body {
   background: rgb(172,213,217);
   background: radial-gradient(circle, rgba(172,213,217,1) 0%, rgba(137,162,217,1) 100%);
@@ -13,8 +17,9 @@ body {
 }
 
 .btn {
-  color: blue;
-  border: solid black;
+  background-color: #dffcff;
+  color: #223358;
+  border: solid white;
   margin-top: 20px;
 }
 
