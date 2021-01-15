@@ -21,7 +21,7 @@ $(document).ready(function () {
     if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 7) {
       $("#answer").show();
       $("#c, #python").hide();
-      } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer > 7 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer < 13) {
+    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer > 7 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer < 13) {
       $("#answer").show();
       $("#ruby, #c").hide(); 
     } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 13) {
@@ -29,6 +29,6 @@ $(document).ready(function () {
       $("#ruby, #python").hide();
     }
     event.preventDefault();
-  }); 
+  });  
 });
 
