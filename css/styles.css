@@ -1,5 +1,21 @@
+h1, p {
+  text-align: center;
+  color: #223358
+}
+
+body {
+  background: rgb(172,213,217);
+  background: radial-gradient(circle, rgba(172,213,217,1) 0%, rgba(137,162,217,1) 100%);
+} 
+
 #answer {
   display:none;
+}
+
+.btn {
+  color: blue;
+  border: solid black;
+  margin-top: 20px;
 }
 
 .refresh {
