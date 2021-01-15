@@ -12,54 +12,70 @@
     <h1>Programming Language Selector Quiz!</h1>
 
     <p>Fill out the quiz below to find out which programming language would be best for you!</p>
-
+    
     <h3>Which color do you like most?</h3>
-    <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-      <option selected>Open this select menu</option>
-      <option value="1">Blue</option>
-      <option value="2">Red</option>
-      <option value="3">Green</option>
-    </select>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Red
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Blue
+      </label>
+    </div>
+   
 
-    <h3>Which season do you like most?</h3>
-    <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-      <option selected>Open this select menu</option>
-      <option value="1">Spring</option>
-      <option value="2">Summer</option>
-      <option value="2">Fall</option>
-    </select>
-
-    <h3>Which food do you like most?</h3>
-    <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-      <option selected>Open this select menu</option>
-      <option value="1">Tacos</option>
-      <option value="2">Pizza</option>
-      <option value="3">Sandwiches</option>
-    </select>
-
-    <h3>Which region do you like most?</h3>
-    <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-      <option selected>Open this select menu</option>
-      <option value="Ruby">Midwest</option>
-      <option value="C">New England</option>
-      <option value="Python">South</option>
-    </select>
-
-    <h3>Which music genre do you like most?</h3>
-    <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-      <option selected>Open this select menu</option>
-      <option value="1">Hip Hop</option>
-      <option value="2">Rock</option>
-      <option value="3">Country</option>
-    </select>
-
-      <button type="submit" class="btn">Submit!</button>
-    </form>
-
-    <div id="quote">
-      <p>The best programming language for you to study is <span id="rate"></span>!</p>
+    <div id="answer">
+      <p>The best programming language for you to study is <span id="ruby">Ruby</span><span id="c">C#</span><span id="python">Python</span>!</p>
     </div>
 
   </div>
 </body>
-</html>
+</html> 
+
+<!-- <form id="quiz">
+      <h3>Which color do you like most?</h3>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="color">
+        <option selected>Open this select menu</option>
+        <option value="1">Blue</option>
+        <option value="2">Red</option>
+        <option value="3">Green</option>
+      </select>
+
+      <h3>Which season do you like most?</h3>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="season">
+        <option selected>Open this select menu</option>
+        <option value="1">Spring</option>
+        <option value="2">Summer</option>
+        <option value="3">Fall</option>
+      </select>
+
+      <h3>Which food do you like most?</h3>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="food">
+        <option selected>Open this select menu</option>
+        <option value="1">Tacos</option>
+        <option value="2">Pizza</option>
+        <option value="3">Sandwiches</option>
+      </select>
+
+      <h3>Which region do you like most?</h3>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="region">
+        <option selected>Open this select menu</option>
+        <option value="1">Midwest</option>
+        <option value="2">New England</option>
+        <option value="3">South</option>
+      </select>
+
+      <h3>Which music genre do you like most?</h3>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="music">
+        <option selected>Open this select menu</option>
+        <option value="1">Hip Hop</option>
+        <option value="2">Rock</option>
+        <option value="3">Country</option>
+      </select>
+
+      <button type="submit" class="btn">Submit!</button>
+    </form> -->
