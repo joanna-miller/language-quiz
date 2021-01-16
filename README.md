@@ -22,8 +22,7 @@ _Fill out this quiz to determine which of the programming language options would
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Form must be cleared to be resubmitted_
 
 ## License
 
