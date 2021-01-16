@@ -20,6 +20,10 @@ _Fill out this quiz to determine which of the programming language options would
 * _Navigate to top level of the directory_
 * _Open index.html in your browser_
 
+#### OR
+
+* [Cick here!](https://joanna-miller.github.io/language-quiz/)
+
 ## Known Bugs
 
 * _Form must be cleared to be resubmitted_
