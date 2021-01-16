@@ -10,7 +10,6 @@ $(document).ready(function () {
     }, false);
   });
   
-
   $("#quiz").submit(function(event) {
     const colorAnswer = parseInt($("#color").val());
     const seasonAnswer = parseInt($("#season").val());
@@ -19,22 +18,23 @@ $(document).ready(function () {
     const musicAnswer = parseInt($("#music").val());
     const nameInput = $("input#name").val();
     
-    if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= -5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= -2) {
+    if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= -5 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= -2 && $('#name')[0].checkValidity() === true ){
       $(".name").text(nameInput);
       $("#answer").fadeIn();
       $("#c, #python").hide();
       $("#c-info, #python-info").hide();
-    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer >= -1 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 1) {
+    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer  + musicAnswer >= -1 && colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer <= 1 && $('#name')[0].checkValidity() === true ) {
       $(".name").text(nameInput);
       $("#answer").fadeIn();
       $("#ruby, #c").hide(); 
       $("#ruby-info, #c-info").hide(); 
-    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 2) {
+    } else if (colorAnswer + seasonAnswer + foodAnswer + regionAnswer + musicAnswer >= 2 && $('#name')[0].checkValidity() === true ) {
       $(".name").text(nameInput);
       $("#answer").fadeIn();
       $("#ruby, #python").hide();
       $("#ruby-info, #python-info").hide();
-    }
+    } 
+    
     event.preventDefault();
   });  
 });
